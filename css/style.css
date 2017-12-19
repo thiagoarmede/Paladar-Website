@@ -3,19 +3,32 @@
 /*CSS da pagina principal do Website da Paladar*/
 /***********************************************/
 
+/***********************************/
+/*               Geral             */
+/***********************************/
+
 body{
-    background: url('../images/paes2.jpg'), 
-                linear-gradient(50deg,black,white);
+    background-image: url('../images/paes2.jpg');
     background-size: 100%;
     background-attachment: fixed;
     height: 100%;
+    position: relative;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 @font-face{
     font-family: brush-script;
     src: url('../text-fonts/BRUSHSCI.TTF');
 }
+
+/*Utilizando flexbox para prender container no fim do site.*/
+.conteudo{
+    flex: 1;
+}
+
 
 /***********************************/
 /*    Classes referentes à navbar. */
@@ -24,7 +37,6 @@ body{
 #logo-navbar{
     font-family: brush-script;
     font-size: 40px;
-    opacity: 1.0;
     color: white;
     font-weight: bold;
 }
@@ -49,6 +61,8 @@ body{
 .capa{
     width: 100%;
     height: 400px;
+    margin-top: 86px;
+    padding-top: 50px;
     background: rgba(0,0,0, 0.3);
 }
 
@@ -84,17 +98,51 @@ body{
 }
 
 /* /////////////////////////////// */
-
-
-
-
-
-
-
-
-
 /* Classes referentes ao Carousel */
+/* /////////////////////////////// */
 
 .img-slides{
     object-fit: contain;
+}
+
+/* /////////////////////////////// */
+/*              Rodapé             */
+/* /////////////////////////////// */
+
+#rodape{
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#rodape h2{
+    color: white;
+    margin: 20px;
+    font-family: brush-script, sans-serif;
+    font-weight: bold;
+}
+
+#rodape h5{
+    display: inline;
+}
+
+#rodape a{
+    color: white;
+}
+
+#rodape a:hover{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#coluna2-rodape{
+    color: white;
+    padding: 10px;
+}
+
+.desenvolvedor{
+    color: white;
+    text-align: center;
+    margin-top: 1px;
+    display: table-cell;
+	vertical-align: middle;    
 }
