@@ -8,7 +8,7 @@
 /***********************************/
 
 body{
-    background-image: url('../images/paes2.jpg');
+    background: url('../images/paes2.jpg');
     background-size: 100%;
     background-attachment: fixed;
     height: 100%;
@@ -20,8 +20,8 @@ body{
 }
 
 @font-face{
-    font-family: brush-script;
-    src: url('../text-fonts/BRUSHSCI.TTF');
+    font-family: elephant;
+    src: url('../text-fonts/ELEPHNT.TTF');
 }
 
 /*Utilizando flexbox para prender container no fim do site.*/
@@ -35,15 +35,14 @@ body{
 /***********************************/
 
 #logo-navbar{
-    font-family: brush-script;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 40px;
     color: white;
-    font-weight: bold;
 }
 
 .links-navbar{
     color: white;
-    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .links-navbar:hover{
@@ -60,9 +59,9 @@ body{
 
 .capa{
     width: 100%;
-    height: 400px;
     margin-top: 86px;
     padding-top: 50px;
+    padding-bottom: 50px;
     background: rgba(0,0,0, 0.3);
 }
 
@@ -74,10 +73,10 @@ body{
 }
 
 .texto-capa h1{
-    font-size: 450%;
+    font-size: 400%;
 }
 
-.texto-capa h1, h6{
+.texto-capa h1{
     font-weight: bold;
 }
 
@@ -105,6 +104,35 @@ body{
     object-fit: contain;
 }
 
+
+
+/* /////////////////////////////// */
+/* Classes referentes ao "Quem Somos" */
+/* /////////////////////////////// */
+
+.quem-somos{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgba(0,0,0, 0.3);
+}
+
+.quem-somos div h1{
+    color: white;
+    font-weight: bold;
+    font-size: 350%;
+    padding-bottom: 10px;
+}
+
+#quem-somos-texto p{
+    padding-left: 80px;
+    color: white;
+}
+
+
+
+
+
+
 /* /////////////////////////////// */
 /*              Rodapé             */
 /* /////////////////////////////// */
@@ -122,6 +150,7 @@ body{
 
 #rodape h5{
     display: inline;
+    font-weight: bold;
 }
 
 #rodape a{
@@ -134,7 +163,7 @@ body{
     text-decoration: none;
 }
 
-#coluna2-rodape{
+#coluna2-rodape, #coluna3-rodape{
     color: white;
     padding: 10px;
 }
@@ -142,7 +171,7 @@ body{
 .desenvolvedor{
     color: white;
     text-align: center;
-    margin-top: 1px;
+    font-size: 80%;
     display: table-cell;
 	vertical-align: middle;    
 }
