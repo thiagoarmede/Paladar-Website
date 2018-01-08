@@ -12,9 +12,10 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
             crossorigin="anonymous">
+    
     </head>
 
-    <body>
+    <body onLoad="flipGallery()">
         
         <!-- Barra de navegação -->        
         <nav class="navbar navbar-expand-sm fixed-top" id="barra-navegacao">
@@ -36,12 +37,11 @@
 
         <!-- Conteúdo da página -->        
         <div class="container conteudo">
-
             <!-- Bloco de capa-->
-            <div class="row">
+            <section class="row">
                 <div class="capa">
                     <div class="texto-capa">
-                        <h1>Fazer em casa pra que?</h1>
+                        <h1>Fazer em casa pra quê?</h1>
                         <h3>A Paladar faz tudo por você!</h6>
                     </div>
                     
@@ -49,85 +49,86 @@
                         <a role="button" class="btn btn-lg btn-custom" href="#">ENCOMENDAS</a>
                     </div>
                 </div>
-            </div>
-
-            <!-- Slides inicio da pagina -->
-            <div class="row">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100 img-slides" src="images/castelo.jpg" alt="First slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Teste</h3>
-                                <p>Teste blablabla</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 img-slides" src="images/lago.jpg" alt="Second slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Teste 2</h3>
-                                <p>Teste blablabla</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 img-slides" src="images/espaço.jpg" alt="Third slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Teste 2</h3>
-                                <p>Teste blablabla</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
+            </section>
 
             <!-- Bloco "Quem Somos" -->
-            <div class="quem-somos">
-                <div style="text-align:center;">
+            <section class="row quem-somos">
+
+                <div class="row mx-auto">
                     <h1>Quem somos?</h1>
                 </div>
-                <div class="row">
-                    <div class="col-sm-6" id="quem-somos-texto">
-                        <p class="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem consectetur et quidem enim excepturi explicabo, perferendis
-                        facilis sed dolorem? Nobis quibusdam cupiditate, sequi aspernatur debitis repudiandae laboriosam suscipit tempore asperiores.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit porro quas molestias culpa, repudiandae, et dolore
-                        ut maxime, odit quaerat quae optio quo commodi? Obcaecati fugit minus porro provident tempore.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi illo tempore veniam nostrum, commodi reprehenderit. Nihil aliquid nostrum fuga totam ullam beatae libero alias error minima voluptas? Quaerat, architecto omnis.
-                    </p>
-                    </div>
-                    <div class="col-sm-6">
-                        
-                    </div>      
-                </div>
-            </div>
 
+                <div class="row"> 
+                    <div class="col-5">
+                        <p class="text-center" id="texto-quem-somos">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti autem adipisci vitae consequatur atque eos amet, fugit excepturi perspiciatis cupiditate distinctio labore veniam quis fuga nostrum voluptates dignissimos, numquam officiis.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus ex ut fuga quas, et laboriosam eius eveniet delectus quidem quae debitis assumenda laudantium itaque tenetur quo ad culpa dolore enim.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur in ipsum labore excepturi dolorum, fugiat libero. Officia est ex amet accusantium possimus odit veniam nemo temporibus unde. Aliquam, ducimus pariatur!
+                        </p>
+                    </div>
+                    <div class="col-7 mx-auto">
+                        <img src="images/teste1.jpg" alt="" class="img-fluid rounded img-quem-somos">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bloco galeria -->
+            <section class="row carrossel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 img-slides" src="images/castelo.jpg" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Teste</h3>
+                                    <p>Teste blablabla</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-slides" src="images/lago.jpg" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Teste 2</h3>
+                                    <p>Teste blablabla</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-slides" src="images/espaço.jpg" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Teste 2</h3>
+                                    <p>Teste blablabla</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+            </section>
+            
+            <!-- Bloco Encomendas -->
+            <section>
+            </section>
         </div>
 
         <!-- Rodapé da página-->
         <footer class="footer" id="rodape">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-6">
                         <h2>Paladar</h2>
                     </div>
                     <div class="col-lg-6" id="coluna2-rodape">
-                        <h5>Endereço: </h5> Rua São Bartolomeu, SN, Centro. Maragojipe - BA. <br>
-                        <h5>Telefone: </h5> (75)3526-2381.
-                    </div>
-                    <div class="col-lg-3" id="coluna3-rodape">
-                        <h5>Redes Sociais: </h5>
+                        <h5>Endereço: </h5>Rua São Bartolomeu, SN, Centro. Maragojipe - BA. <br>
+                        <h5>Telefone: </h5>(75)3526-2381.
                     </div>
                 </div>
                 <div class="row desenvolvedor">
@@ -141,6 +142,9 @@
             </div>
         </footer>        
 
+
+
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -149,6 +153,7 @@
             crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
             crossorigin="anonymous"></script>
+
     </body>
 
 </html>
