@@ -15,7 +15,7 @@
     
     </head>
 
-    <body onLoad="flipGallery()">
+    <body>
         
         <!-- Barra de navegação -->        
         <nav class="navbar navbar-expand-sm fixed-top" id="barra-navegacao">
@@ -23,7 +23,7 @@
                 <a href="#" class="navbar-brand" id="logo-navbar">Paladar</a>
                 <ul class="navbar-nav navbar-right" id="items-navbar">
                     <li class="nav-item">
-                        <a href="#" class="nav-link links-navbar">FOTOS</a>
+                        <a href="#" onclick="moveScrollCarrossel();" class="nav-link links-navbar">FOTOS</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link links-navbar">ENCOMENDAS</a>
@@ -45,8 +45,8 @@
                         <h3>A Paladar faz tudo por você!</h6>
                     </div>
                     
-                    <div class="botao-capa">    
-                        <a role="button" class="btn btn-lg btn-custom" href="#">ENCOMENDAS</a>
+                    <div class="botao-capa"> 
+                        <a role="button" class="btn btn-lg btn-custom" onclick="moveScrollCarrossel();">ENCOMENDAS</a>
                     </div>
                 </div>
             </section>
@@ -59,14 +59,14 @@
                 </div>
 
                 <div class="row"> 
-                    <div class="col-5">
+                    <div class="col-5 justify-content-center">
                         <p class="text-center" id="texto-quem-somos">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti autem adipisci vitae consequatur atque eos amet, fugit excepturi perspiciatis cupiditate distinctio labore veniam quis fuga nostrum voluptates dignissimos, numquam officiis.
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus ex ut fuga quas, et laboriosam eius eveniet delectus quidem quae debitis assumenda laudantium itaque tenetur quo ad culpa dolore enim.
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur in ipsum labore excepturi dolorum, fugiat libero. Officia est ex amet accusantium possimus odit veniam nemo temporibus unde. Aliquam, ducimus pariatur!
                         </p>
                     </div>
-                    <div class="col-7 mx-auto">
+                    <div class="col-7 justify-content-center">
                         <img src="images/teste1.jpg" alt="" class="img-fluid rounded img-quem-somos">
                     </div>
                 </div>
@@ -144,15 +144,17 @@
 
 
 
-
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
             crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
             crossorigin="anonymous"></script>
+
+
+        <!-- JavaScript proprietário -->
+        <script src="js/main.js"></script>
 
     </body>
 

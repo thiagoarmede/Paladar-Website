@@ -29,7 +29,6 @@ body{
     flex: 1;
 }
 
-
 /***********************************/
 /*    Classes referentes à navbar. */
 /***********************************/
@@ -112,6 +111,8 @@ body{
 .quem-somos{
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
     background: rgba(0,0,0, 0.3);
 }
 
