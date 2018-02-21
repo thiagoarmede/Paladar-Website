@@ -24,7 +24,19 @@ body{
     src: url('../text-fonts/ELEPHNT.TTF');
 }
 
-/*Utilizando flexbox para prender container no fim do site.*/
+.btn-custom{
+    color: white;
+    background: rgb(97, 0, 0);
+    transition: background 0.3s;
+}
+
+.btn-custom:hover{
+    background: rgb(150, 0, 0);
+    color: white;
+    border-color: white;
+}
+
+/* Utilizando flexbox para prender container no fim do site. */
 .conteudo{
     flex: 1;
 }
@@ -83,18 +95,10 @@ body{
 .botao-capa{
     display: table;
     margin: 0 auto;
-}
-
-.btn-custom{
-    color: white;
-    background: rgb(97, 0, 0);
-    transition: background 0.3s;
-}
-
-.btn-custom:hover{
-    background: rgb(150, 0, 0);
     color: white;
 }
+
+
 
 /* /////////////////////////////// */
 /* Classes referentes ao Carousel */

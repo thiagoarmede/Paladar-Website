@@ -8,10 +8,13 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <!-- Estilo -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/forms.css">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
             crossorigin="anonymous">
+
+
     
     </head>
 
@@ -115,8 +118,44 @@
             </section>
             
             <!-- Bloco Encomendas -->
-            <section>
-            </section>
+            <div class="sessao-forms">
+                <div class="header-encomendas">
+                    <p>
+                        <h1 style="color:white; text-align:center; font-size:350%;">Encomende conosco!</h1>
+                    </p>
+                    <p>
+                        Preencha seus dados e descreva o pedido, que em pouco tempo te ligaremos! Nossos serviços
+                    </p>
+                </div>
+
+                <form>
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="form-nome" class="label-form">Nome Completo: </label>
+                            <input type="text" class="form-control inputs-encomendas" placeholder="Ex: João da Silva" id="form-nome">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-3">
+                            <label for="form-tel" class="label-form">Telefone: </label>
+                            <input type="text" class="form-control inputs-encomendas" placeholder="Ex: (71) 99999-8888" id="form-tel">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-8">
+                                <label for="form-desc" class="label-form">Descrição do pedido: </label>
+                                <textarea type="text" class="form-control inputs-encomendas input-desc" placeholder="Ex: Olá, gostaria de encomendar 50 empadas e 50 pães de queijo para a proxima semana!" id="form-desc"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-custom botao-form mx-auto" type="submit">
+                            <span style="font-size:120%;">Enviar</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+
         </div>
 
         <!-- Rodapé da página-->
