@@ -1,0 +1,43 @@
+
+#sessao-galeria{
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.header-galeria{
+    text-align:center; 
+    color:white; 
+    font-size:350%; 
+    padding-bottom:40px;
+    font-family: quicksand;
+}
+
+div#quad { 
+    font-size: 0; width: 100%; 
+    margin: 0 auto;
+    box-shadow: 0 0 12px rgba(255,255,255,0.5);
+}
+
+div#quad figure { 
+    margin: 0; width: 33.3%; 
+    height: auto; transition: 0.5s; 
+    display: inline-block; 
+    position: relative; overflow: hidden; 
+}
+
+div#quad figure:hover { cursor: pointer; z-index: 4; }
+div#quad figure img { width: 100%; height: auto; }
+div#quad figure figcaption { 
+    margin: 0; opacity: 0; 
+    background: rgba(0,0,0,0.3); 
+    color: #fff; padding: .3rem; 
+    font-size: 1.2rem; 
+    position: absolute; 
+    bottom: 0; width: 100%;
+    transition: 1s 1s opacity; 
+}
+
+.expanded { transform: scale(2); z-index: 5;}
+div#quad figure.expanded figcaption { opacity: 1; }
+div.full figure:not(.expanded) { pointer-events: none; }

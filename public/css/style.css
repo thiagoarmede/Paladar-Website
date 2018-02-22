@@ -24,22 +24,40 @@ body{
     src: url('../text-fonts/ELEPHNT.TTF');
 }
 
-.btn-custom{
-    color: white;
-    background: rgb(97, 0, 0);
-    transition: background 0.3s;
+@font-face{
+    font-family: quicksand;
+    src: url('../text-fonts/Quicksand-Regular.otf');
 }
 
-.btn-custom:hover{
-    background: rgb(150, 0, 0);
-    color: white;
+@font-face{
+    font-family: quicksand-bold;
+    src: url('../text-fonts/Quicksand-Bold.otf');
+}
+
+hr.style-seven {
+    overflow: visible; /* For IE */
+    height: 100%;
+    border-style: solid;
     border-color: white;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    background: white;
 }
-
+hr.style-seven:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color:white;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
 /* Utilizando flexbox para prender container no fim do site. */
 .conteudo{
     flex: 1;
 }
+
 
 /***********************************/
 /*    Classes referentes à navbar. */
@@ -53,8 +71,8 @@ body{
 
 .links-navbar{
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 110%;
+    font-family: quicksand;
+    font-size: 105%;
 }
 
 .links-navbar:hover{
@@ -65,41 +83,6 @@ body{
     background: rgba(97, 0, 0, 0.8);
 }
 
-/* ///////////////////////////////// */
-/* Classes referentes à capa do site */
-/* ///////////////////////////////// */
-
-.capa{
-    width: 100%;
-    margin-top: 86px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background: rgba(0,0,0, 0.3);
-}
-
-.texto-capa{
-    margin: 20px;
-    color: white;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.texto-capa h1{
-    font-size: 400%;
-}
-
-.texto-capa h1{
-    font-weight: bold;
-}
-
-.botao-capa{
-    display: table;
-    margin: 0 auto;
-    color: white;
-}
-
-
-
 /* /////////////////////////////// */
 /* Classes referentes ao Carousel */
 /* /////////////////////////////// */
@@ -108,21 +91,27 @@ body{
     object-fit: contain;
 }
 
+.carrossel{
+    margin-top: 86px;
+}
+
 /* /////////////////////////////// */
 /* Classes referentes ao "Quem Somos" */
 /* /////////////////////////////// */
+.header-quem-somos{
+    font-family: quicksand;
+}
 
 .quem-somos{
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 20px;
     padding-right: 20px;
-    background: rgba(0,0,0, 0.3);
+    background: rgba(0,0,0, 0.5);
 }
 
 .quem-somos div h1{
     color: white;
-    font-weight: bold;
     font-size: 350%;
     padding-bottom: 30px;
 }
@@ -139,7 +128,7 @@ body{
 /* /////////////////////////////// */
 
 #rodape{
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 #rodape h2{

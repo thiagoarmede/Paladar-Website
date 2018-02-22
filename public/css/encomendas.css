@@ -1,0 +1,54 @@
+/*
+    Folha de estilo direcionada a área de encomendas do site.
+    Autor: Thiago Armede.
+    02/2018.
+*/
+
+.sessao-forms{
+    background: rgba(0,0,0, 0.5);
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+}
+
+.sessao-forms h1, .sessao-forms h2, .sessao-forms h3, .sessao-forms h4, .sessao-forms h5,.sessao-forms h6{
+    font-family: quicksand;
+}
+.header-encomendas{
+    color: white;
+    size: 100%;
+}
+
+/*
+    Classes Associadas ao formulário das encomendas.
+*/
+
+.label-form{
+    color: white;
+    text-decoration: bold;
+}
+
+.inputs-encomendas{
+    margin-bottom: 20px;
+}
+
+.input-desc{
+    height: 180px;
+    resize: none;
+}
+
+.btn-custom{
+    color: white;
+    background: rgb(97, 0, 0);
+    transition: background 0.3s;
+    width: 150px;
+    height: 50px;     
+}
+
+.btn-custom:hover{
+    background: rgb(150, 0, 0);
+    color: white;
+    border-color: white;
+}
