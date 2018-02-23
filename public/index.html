@@ -1,39 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <title>Paladar</title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Ícone -->
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <!-- Estilo -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/encomendas.css">
         <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/quem-somos.css">
+        <link rel="stylesheet" href="css/rodape.css">
+        <link rel="stylesheet" href="css/visite-nos.css">
+        
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
             crossorigin="anonymous">
-
-
-    
     </head>
 
     <body>
-        
         <!-- Barra de navegação -->        
         <nav class="navbar navbar-expand-sm fixed-top" id="barra-navegacao">
             <div class="container">
                 <a href="#" class="navbar-brand" id="logo-navbar">Paladar</a>
                 <ul class="navbar-nav navbar-right" id="items-navbar">
                     <li class="nav-item">
-                        <a href="#" onclick="moveScrollCarrossel();" class="nav-link links-navbar menu-fotos">FOTOS</a>
+                        <a href="#" class="nav-link links-navbar menu-sobre">SOBRE NÓS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link links-navbar menu-visite">VISITE-NOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link links-navbar menu-fotos">FOTOS</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link links-navbar menu-enc">ENCOMENDAS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link links-navbar menu-sobre">SOBRE NÓS</a>
                     </li>
                 </ul>
             </div>
@@ -84,10 +89,10 @@
             </section>
 
             <!-- Bloco "Quem Somos" -->
-            <section class="row quem-somos">
+            <section class="row sessoes quem-somos">
 
-                <div class="row mx-auto header-quem-somos">
-                    <h1>Quem somos?</h1>
+                <div class="row mx-auto">
+                    <h1 class="default-titles">Quem somos?</h1>
                 </div>
 
                 <div class="row"> 
@@ -106,9 +111,15 @@
                 </div>
             </section>
 
-            <section class="row" id="sessao-galeria">
+            <!-- Bloco "Visite-nos" -->
+            <section class="row sessoes">
+
+            </section>
+
+            <!-- Bloco Galeria -->
+            <section class="row sessoes">
                 <div class="mx-auto">
-                    <h1 class= "header-galeria"style="text-align:center; color:white; font-size:350%; padding-bottom:40px;">Galeria</h1>
+                    <h1 class= "default-titles"style="text-align:center; color:white; font-size:350%; padding-bottom:40px;">Galeria</h1>
                 </div>
                 <div id="quad">
                     <figure>
@@ -150,20 +161,15 @@
                 </div>
                 <hr class="style-seven">
             </section>
-
             
             <!-- Bloco Encomendas -->
             <div class="row">
-                <div class="sessao-forms">  
+                <div class="sessao-forms sessoes">  
                     <div class="header-encomendas">
                         <div class="row justify-content-center">
                             <div>
-                                <p>
-                                    <h1 style="color:white; text-align:center; font-size:350%;">Fazer em casa pra que?</h1>
-                                </p>
-                                <p>
-                                    <h3 style="text-align:center;">A Paladar faz por você!</h3>
-                                </p>
+                                <h1 class="default-titles">Fazer em casa pra que?</h1>
+                                <h3>A Paladar faz por você!</h3>
                             </div>
                         </div>
                         <div>
@@ -230,20 +236,17 @@
             </div>
         </footer>        
         
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-            crossorigin="anonymous"></script>
-
         <!-- JavaScript proprietário -->
         <script src="js/main.js"></script>
         <script src="js/events.js"></script>
         <script src="js/gallery.js"></script>
 
+        <!-- Dependências do bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous"></script>
     </body>
 
 </html>

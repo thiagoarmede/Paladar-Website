@@ -1,11 +1,7 @@
 /***********************************************/
 /*            Autor: Thiago Armede             */
-/*CSS da pagina principal do Website da Paladar*/
+/* Folha de estilo geral do Website da Paladar */
 /***********************************************/
-
-/***********************************/
-/*               Geral             */
-/***********************************/
 
 body{
     background-image: url('../images/paes2.jpg');
@@ -18,6 +14,26 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+.sessoes{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgba(0,0,0, 0.5);
+}
+
+.default-titles{
+    text-align:center; 
+    color:white; 
+    font-size:350%; 
+    padding-bottom:35px;
+    font-family: quicksand;
+}
+
+/*
+    Importação de fontes.
+*/
 
 @font-face{
     font-family: elephant;
@@ -33,6 +49,22 @@ body{
     font-family: quicksand-bold;
     src: url('../text-fonts/Quicksand-Bold.otf');
 }
+
+@font-face{
+    font-family: quicksand-bold-italic;
+    src: url('../text-fonts/Quicksand-BoldItalic.otf');
+}
+
+@font-face{
+    font-family: josefinsans;
+    src: url('../text-fonts/JosefinSans-Regular.ttf');
+}
+
+@font-face{
+    font-family: josefinsans-semi;
+    src: url('../text-fonts/JosefinSans-SemiBold.ttf');
+}
+
 
 hr.style-seven {
     overflow: visible; /* For IE */
@@ -53,34 +85,10 @@ hr.style-seven:before { /* Not really supposed to work, but does */
     border-width: 0 0 1px 0;
     border-radius: 20px;
 }
+
 /* Utilizando flexbox para prender container no fim do site. */
 .conteudo{
     flex: 1;
-}
-
-
-/***********************************/
-/*    Classes referentes à navbar. */
-/***********************************/
-
-#logo-navbar{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
-    color: white;
-}
-
-.links-navbar{
-    color: white;
-    font-family: quicksand;
-    font-size: 105%;
-}
-
-.links-navbar:hover{
-    color: rgba(218, 176, 9, 0.966);
-}
-
-#barra-navegacao{
-    background: rgba(97, 0, 0, 0.8);
 }
 
 /* /////////////////////////////// */
@@ -95,77 +103,5 @@ hr.style-seven:before { /* Not really supposed to work, but does */
     margin-top: 86px;
 }
 
-/* /////////////////////////////// */
-/* Classes referentes ao "Quem Somos" */
-/* /////////////////////////////// */
-.header-quem-somos{
-    font-family: quicksand;
-}
-
-.quem-somos{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: rgba(0,0,0, 0.5);
-}
-
-.quem-somos div h1{
-    color: white;
-    font-size: 350%;
-    padding-bottom: 30px;
-}
-
-.img-quem-somos{
-    width: 80%;
-}
-
-#texto-quem-somos{
-    color: white;
-}
-/* /////////////////////////////// */
-/*              Rodapé             */
-/* /////////////////////////////// */
-
-#rodape{
-    background: rgba(0, 0, 0, 0.8);
-}
-
-#rodape h2{
-    color: white;
-    margin: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#rodape h5{
-    display: inline;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#rodape a{
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 
-    sans-serif;
-}
-
-#rodape a:hover{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#coluna2-rodape, #coluna3-rodape{
-    color: white;
-    padding: 20px;
-}
-
-.desenvolvedor{
-    color: white;
-    text-align: center;
-    font-size: 80%;
-    display: table-cell;
-	vertical-align: middle;    
-}
 
 /*****************FIM******************/

@@ -5,20 +5,15 @@
 */
 
 .sessao-forms{
-    background: rgba(0,0,0, 0.5);
-    padding-bottom: 40px;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
     width: 100%;
+    font-family: quicksand;
+    color: white;
 }
 
-.sessao-forms h1, .sessao-forms h2, .sessao-forms h3, .sessao-forms h4, .sessao-forms h5,.sessao-forms h6{
-    font-family: quicksand;
-}
-.header-encomendas{
-    color: white;
-    size: 100%;
+.header-encomendas div h3{
+    text-align:center;
+    margin-top: -35px; 
+    margin-bottom: 25px;
 }
 
 /*
@@ -31,7 +26,7 @@
 }
 
 .inputs-encomendas{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .input-desc{

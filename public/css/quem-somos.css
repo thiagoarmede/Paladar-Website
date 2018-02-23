@@ -1,0 +1,13 @@
+/*
+    Folha de estilo referente a sessão "Quem Somos" do site.
+    Autor: Thiago Armede.
+    02/2018
+*/
+
+.img-quem-somos{
+    width: 80%;
+}
+
+#texto-quem-somos{
+    color: white;
+}

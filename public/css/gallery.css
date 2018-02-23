@@ -1,26 +1,18 @@
-
-#sessao-galeria{
-    background: rgba(0, 0, 0, 0.5);
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.header-galeria{
-    text-align:center; 
-    color:white; 
-    font-size:350%; 
-    padding-bottom:40px;
-    font-family: quicksand;
-}
+/*
+    Folha de estilo da galeria da página.
+    Autor: Thiago Armede.
+    02/2018.
+*/
 
 div#quad { 
     font-size: 0; width: 100%; 
     margin: 0 auto;
-    box-shadow: 0 0 12px rgba(255,255,255,0.5);
+    box-shadow: 0 0 12px rgba(255, 153, 0, 0.5);
 }
 
 div#quad figure { 
-    margin: 0; width: 33.3%; 
+    margin: 0; 
+    width: 33.3%; 
     height: auto; transition: 0.5s; 
     display: inline-block; 
     position: relative; overflow: hidden; 
@@ -38,6 +30,6 @@ div#quad figure figcaption {
     transition: 1s 1s opacity; 
 }
 
-.expanded { transform: scale(2); z-index: 5;}
+.expanded { transform: scale(1.4); z-index: 5;}
 div#quad figure.expanded figcaption { opacity: 1; }
 div.full figure:not(.expanded) { pointer-events: none; }

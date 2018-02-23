@@ -1,0 +1,47 @@
+/*
+    Folha de estilo referente ao rodapé da página.
+    Autor: Thiago Armede.
+    02/2018
+*/
+
+
+#rodape{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#rodape h2{
+    color: white;
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#rodape h5{
+    display: inline;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#rodape a{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 
+    sans-serif;
+}
+
+#rodape a:hover{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#coluna2-rodape, #coluna3-rodape{
+    color: white;
+    padding: 20px;
+}
+
+.desenvolvedor{
+    color: white;
+    text-align: center;
+    font-size: 80%;
+    display: table-cell;
+	vertical-align: middle;    
+}

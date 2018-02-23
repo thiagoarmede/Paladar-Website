@@ -1,0 +1,26 @@
+/*
+    Folha de estilo  da barra de navegação do site.
+    Autor: Thiago Armede.
+    02/2018
+*/
+
+#logo-navbar{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.links-navbar{
+    color: white;
+    font-family: josefinsans;
+    font-size: 105%;
+    transition: color 0.4s;
+}
+
+.links-navbar:hover{
+    color: rgba(218, 176, 9, 0.966);
+}
+
+#barra-navegacao{
+    background: rgba(97, 0, 0, 0.8);
+}
