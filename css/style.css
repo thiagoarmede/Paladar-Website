@@ -6,6 +6,13 @@ html{
     font-size: 100%;
 }
 
+@media (max-width: 600px) 
+{
+    html{
+        font-size: 70%;
+    }
+}
+
 body{
     background-image: url('../images/paes2.jpg');
     background-size: 100%;
@@ -23,11 +30,12 @@ body{
     padding-bottom: 1.8rem;
     padding-left: 2ch;
     padding-right: 2ch;
+    color: white;
     background: rgba(0,0,0, 0.5);
 }
 
 .default-titles{
-    text-align:center; 
+    text-align: center; 
     color:white; 
     font-size:350%; 
     padding-bottom:1.8rem;
@@ -78,6 +86,7 @@ hr.style-seven {
     border-radius: 20px;
     background: white;
 }
+
 hr.style-seven:before { /* Not really supposed to work, but does */
     display: block;
     content: "";
@@ -97,16 +106,15 @@ hr.style-seven:before { /* Not really supposed to work, but does */
 /* /////////////////////////////// */
 /* Classes referentes ao Carousel */
 /* /////////////////////////////// */
-
 .img-slides{
     object-fit: contain;
 }
 
 .carrossel{
-    margin-top: 4.6rem;
+    margin-top: 0em;
     padding-left: 10ch;
     padding-right: 10ch;
-    padding-top: 8ch;
+    padding-top: 11ch;
 }
 
 

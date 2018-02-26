@@ -4,10 +4,19 @@
     02/2018
 */
 
-
 /********************************************************
 **Eventos que conectam items do menu à sessões do site.**
 ********************************************************/
+
+elementosForm = Array.from(document.querySelector('form').children);
+console.log(elementosForm);
+elementosForm.forEach(element => {
+    element.addEventListener('click', () => {
+        event.preventDefault();
+        alert('Horário de atendimento encerrado!');
+    });
+});
+
 
 const menuBtnEncomendas = document.querySelector('.menu-enc');
 menuBtnEncomendas.addEventListener('click', () => {
@@ -43,7 +52,7 @@ menuSobre.addEventListener('click', () => {
 /* Evento de expansão das imagens da galeria */
 
 const quadimages = document.querySelectorAll("#quad figure");
-for (i = 0; i < quadimages.length; i++) {
+for (i = 0; i < quadimages.length; i++){
     quadimages[i].addEventListener('click', function () { 
         this.classList.toggle("expanded"); 
         quad.classList.toggle("full") 
